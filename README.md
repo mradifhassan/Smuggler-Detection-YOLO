@@ -23,7 +23,7 @@ This repository showcases custom object detection using the YOLOv8-Nano model, f
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Build & Run Instructions
 
-First of all, we need to setup our environment in our desktop so that we can work. So, we need anaconda to install. Go to the official website of anaconda (https://www.anaconda.com/download) and download it. Then launch your terminal and write `conda activate` if you are on Linux, if you are on windows. you might see conda prompt from menu. Now your desktop environment has been set up. Now follow the commands below-
+First of all, we need to setup our environment in our desktop so that we can work. So, we need anaconda to install. Go to the official website of anaconda (https://www.anaconda.com/download) and download it. Then launch your terminal and write `conda activate` if you are on Linux, if you are on windows, you might see conda prompt from menu. Now your desktop environment has been set up. Now follow the commands below-
 ```bash
 # Creating environment for yolo which is a framework of python
 conda create --name yolo-env1 python=3.13 -y
