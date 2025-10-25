@@ -38,9 +38,8 @@ conda activate yolo-env1
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
 # Now install label-studio exactly what we are going to do training and labeling our object by naming classes
-
-````
 pip install label-studio
 
 # Launch label-studio
 label-studio start
+````
