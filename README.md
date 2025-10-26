@@ -43,3 +43,9 @@ pip install label-studio
 # Launch label-studio
 label-studio start
 ````
+Now our task is to labeling up our datasets by label-studio; after labeling, download as `YOLO format` where every images and their train dataset will exist in corresponding order. Make sure to keep all of the datasets as corresponding, otherwise training will be terminated or not work. If they aren't in corresponding order or if you just see any suffix infront of the name of your images or `txt` file, use this bash command to make them corresponding order-
+
+````bash
+
+# check how many images are there in your foler
+ls -l | wc -l
