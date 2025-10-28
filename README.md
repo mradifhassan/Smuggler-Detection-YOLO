@@ -8,7 +8,7 @@ A simple object detection ML model based on small training focused on detecting 
 - [Build & Run Instructions](#build--run-instructions)
   
 ## Overview
-This repository showcases custom object detection using the YOLOv8-Nano model, fine-tuned to identify and localize two distinct classes: Pens and Pencils. The project demonstrates the complete machine learning workflow, from custom data preparation and model training on a small, self-collected dataset to real-time live inference using a webcam stream. It serves as a strong proof-of-concept for deploying lightweight, high-speed object detection models on low-power devices.
+This repository showcases custom object detection using the YOLOv8-Nano model, fine-tuned to identify and localize one class: Smuggler. The project demonstrates the complete machine learning workflow, from custom data preparation and model training on a small, self-collected dataset to real-time live inference using a webcam stream. It serves as a strong proof-of-concept for deploying lightweight, high-speed object detection models on low-power devices.
 ## Prerequisties
 | **Component**      | **Requirement**                          | **Notes**                                                                                            |
 |--------------------|------------------------------------------|------------------------------------------------------------------------------------------------------|
