@@ -74,7 +74,7 @@ Now if everything is done, now you are ready to train the mode
 python3 train_yolo.py
 ````
 
-Once you finished training properly, you are ready to test. There are several options to test, form your camera/webcams attached with your device, testing from `mp4` file from your device or directly accessing camera to another device like Smartphone or tablets where requires a software names `Ip Camera` which allows you to connect your device with another device by your ip address under same network (like your WiFi, Cellular data) 
+Once you finished training properly, you are ready to test. There are several options to test, form your camera/webcams attached with your device, testing from `mp4` file from your device or directly accessing camera to another device like Smartphone or tablets where requires a software named `Ip Camera` which allows you to connect your device with another device by your ip address under same network (like your WiFi, Cellular data) 
 
 ````bash
 # Running from webcam/camera
@@ -88,4 +88,4 @@ yolo predict model='/home/username/Smuggler Detection/runs/detect/border_securit
 
 ````
 
-In order to access from another device by using ip address, Download Ip Camera, click start server from top right three dot, it will show a interface of a camera, click more and copy the ip address like this format `192.168.XXX.XX`.
+In order to access from another device by using ip address, Download `Ip Camera`, click start server from top right three dot, it will show a interface of a camera, click more and copy the ip address like this format `192.168.XXX.XX`. Now add this here 
