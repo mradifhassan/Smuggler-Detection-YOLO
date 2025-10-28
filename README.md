@@ -78,12 +78,14 @@ Once you finished training properly, you are ready to test. There are several op
 
 ````bash
 # Running from webcam/camera
-yolo predict model='/home/radif/Smuggler Detection/runs/detect/border_security_cpu_v1/weights/best.pt' source=0 show=True
+yolo predict model='/home/username/Smuggler Detection/runs/detect/border_security_cpu_v1/weights/best.pt' source=0 show=True
 
 # Running from device's folder
-yolo predict model='runs/detect/border_security_cpu_v1/weights/best.pt' source='/home/radif/Downloads/Radifyy.mp4' show=True
+yolo predict model='runs/detect/border_security_cpu_v1/weights/best.pt' source='/home/username/Downloads/video.mp4' show=True
 
 # Accessing from another device using ip address
-yolo predict model='/home/radif/Smuggler Detection/runs/detect/border_security_cpu_v1/weights/best.pt' source="http://192.168.XXX.XX:8080/video" show=True
+yolo predict model='/home/username/Smuggler Detection/runs/detect/border_security_cpu_v1/weights/best.pt' source="http://192.168.XXX.XX:8080/video" show=True
 
 ````
+
+In order to access from another device by using ip address, Download Ip Camera, click start server from top right three dot, it will show a interface of a camera, click more and copy the ip address like this format `192.168.XXX.XX`.
