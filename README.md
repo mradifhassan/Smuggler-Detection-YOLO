@@ -47,5 +47,22 @@ Now our task is to labeling up our datasets by label-studio; after labeling, dow
 
 ````bash
 
-# check how many images are there in your foler
+# Check how many images are there in your folder
 ls -l | wc -l
+
+# Renaming for ascending order
+n=1
+for file in $(ls -v *.jpg); do
+    new_name=$(printf "%03d.jpg" "$n")
+    mv -i "$file" "$new_name"
+    n=$((n + 1))
+done
+
+# If the corresponding txt format trained datasets contains suffix, then use this command
+for filename in *.txt; do
+    new_name=$(echo "$filename" | sed -E 's/^[^0-9]*([0-9].*)\.txt$/\1\.txt/')
+    if [ "$filename" != "$new_name" ]; then
+        mv "$filename" "$new_name"
+    fi
+done
+````
