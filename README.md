@@ -66,3 +66,24 @@ for filename in *.txt; do
     fi
 done
 ````
+Now if everything is done, now you are ready to train the mode
+
+````bash
+
+# Run from your PyCharm terminal
+python3 train_yolo.py
+````
+
+Once you finished training properly, you are ready to test. There are several options to test, form your camera/webcams attached with your device, testing from `mp4` file from your device or directly accessing camera to another device like Smartphone or tablets where requires a software names `Ip Camera` which allows you to connect your device with another device by your ip address under same network (like your WiFi, Cellular data) 
+
+````bash
+# Running from webcam/camera
+yolo predict model='/home/radif/Smuggler Detection/runs/detect/border_security_cpu_v1/weights/best.pt' source=0 show=True
+
+# Running from device's folder
+yolo predict model='runs/detect/border_security_cpu_v1/weights/best.pt' source='/home/radif/Downloads/Radifyy.mp4' show=True
+
+# Accessing from another device using ip address
+yolo predict model='/home/radif/Smuggler Detection/runs/detect/border_security_cpu_v1/weights/best.pt' source="http://192.168.XXX.XX:8080/video" show=True
+
+````
