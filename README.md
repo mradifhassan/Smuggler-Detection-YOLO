@@ -1,3 +1,6 @@
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="Screenshot from 2026-09-25 11-33-05.png" />
+</div>
 # Smuggler-Detection-YOLO
 
 A simple object detection ML model based on small training focused on detecting smuggler.
